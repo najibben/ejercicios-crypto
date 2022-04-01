@@ -33,7 +33,7 @@ Secret key at B =  470
 ```
 # 2. (3 puntos) Alice y Bob deciden utilizar el método de cifrado ElGamal para sus comunicaciones. Como valores públicos toman p = 1373 y g = 2.
 
-(i) Si Alice usa a = 947 como clave privada, ¿cu´al es su clave p´ublica A?
+(i) Si Alice usa a = 947 como clave privada, ¿cuál es su clave pública A?
 
 ```
 Procfile: elgamal.py
@@ -42,7 +42,7 @@ Y=gx(modp) = 177
 Alice Public key (P,g,Y)= 1373 2 177
 ```
 
-(ii) La clave privada de Bob es b = 716, ¿cu´al es su clave p´ublica B?
+(ii) La clave privada de Bob es b = 716, ¿cúal es su clave pública B?
 
 ```
 Procfile: elgamal.py
@@ -101,6 +101,10 @@ Decrypt= 332
 
 
 el discriminante ∆(E), demostrad que el punto P = (4, 9) ∈ E(K) y calculad 2 · P.
+
+![image](https://user-images.githubusercontent.com/28484657/161295047-35c62415-ab53-4555-8977-fbfd5fbfaa3c.png)
+
+ref: https://github.com/cardwizard/EllipticCurves
 
 # 4. (3 puntos) Alice y Bob usarán la versión sobre curvas elípticas del intercambio de claves
 Diffie-Hellman utilizando el primo p = 2671, la curva E : y

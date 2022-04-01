@@ -1,10 +1,10 @@
 # ejercicios-crypto
 
 Enunciados
-# 1. (2 puntos) Alice y Bob quieren utilizar el intercambio de claves Diffie-Hellman para encontrar un secreto com´un del que derivar´an la clave secreta para un algoritmo sim´etrico.
-Acuerdan utilizar el n´umero primo p = 941 y la ra´ız g = 627 como valores p´ublicos. Si Alice
+# 1. (2 puntos) Alice y Bob quieren utilizar el intercambio de claves Diffie-Hellman para encontrar un secreto común del que derivar´an la clave secreta para un algoritmo simétrico.
+Acuerdan utilizar el número primo p = 941 y la ra´ız g = 627 como valores públicos. Si Alice
 toma como clave privada a = 347 y Bob toma como clave privada b = 781, ¿cu´al es el valor
-secreto com´un?
+secreto común?
 
 ```
 Procfile: python3 DH.py
@@ -31,7 +31,7 @@ print("Secret key at B = ", str(Kb))
 Secret key at A =  470
 Secret key at B =  470
 ```
-# 2. (3 puntos) Alice y Bob deciden utilizar el m´etodo de cifrado ElGamal para sus comunicaciones. Como valores p´ublicos toman p = 1373 y g = 2.
+# 2. (3 puntos) Alice y Bob deciden utilizar el método de cifrado ElGamal para sus comunicaciones. Como valores públicos toman p = 1373 y g = 2.
 
 (i) Si Alice usa a = 947 como clave privada, ¿cu´al es su clave p´ublica A?
 
@@ -71,7 +71,7 @@ Cipher= 719 623
 Decrypt= 583
 ```
 
-(iv) Alice decide cambiar su clave privada por a = 299. Si Bob env´ıa a Alice el mensaje
+(iv) Alice decide cambiar su clave privada por a = 299. Si Bob envía a Alice el mensaje
 cifrado (661, 1325), ¿pod´eis descifrar el mensaje?
 
 ```
@@ -96,13 +96,13 @@ Cipher= 661 1325
 Decrypt= 332
 ```
 
-# 3. (1 punto) Considerad la curva el´ıptica E : 
+# 3. (1 punto) Considerad la curva elíptica E : 
 `y2 = x3+3x+5`, definida sobre `K = F19`. Calculad
 
 
 el discriminante ∆(E), demostrad que el punto P = (4, 9) ∈ E(K) y calculad 2 · P.
 
-# 4. (3 puntos) Alice y Bob usar´an la versi´on sobre curvas el´ıpticas del intercambio de claves
+# 4. (3 puntos) Alice y Bob usarán la versión sobre curvas elípticas del intercambio de claves
 Diffie-Hellman utilizando el primo p = 2671, la curva E : y
 2 = x
 3 + 171x + 853 y el punto

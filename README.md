@@ -2,8 +2,8 @@
 
 Enunciados
 # 1. (2 puntos) Alice y Bob quieren utilizar el intercambio de claves Diffie-Hellman para encontrar un secreto común del que derivar´an la clave secreta para un algoritmo simétrico.
-Acuerdan utilizar el número primo p = 941 y la ra´ız g = 627 como valores públicos. Si Alice
-toma como clave privada a = 347 y Bob toma como clave privada b = 781, ¿cu´al es el valor
+Acuerdan utilizar el número primo p = 941 y la raíz g = 627 como valores públicos. Si Alice
+toma como clave privada a = 347 y Bob toma como clave privada b = 781, ¿cuál es el valor
 secreto común?
 
 ```
@@ -115,6 +115,8 @@ P = (1980, 431) ∈ E(F2671).
 ¿qu´e punto debe enviar Bob a Alice?
 
 (ii) ¿Cu´al es el valor secreto com´un?
+
+![image](https://user-images.githubusercontent.com/28484657/161999492-43000bf6-a688-48e8-9ed2-379cbfb5bfe1.png)
 
 (iii) Alice y Bob deciden volver a ejecutar el algoritmo con los mismos valores p´ublicos, pero
 ahora Alice s´olo env´ıa la coordenada xA = 2 de su punto QA. Bob ha cambiado su clave

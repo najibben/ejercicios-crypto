@@ -106,11 +106,8 @@ el discriminante ∆(E), demostrad que el punto P = (4, 9) ∈ E(K) y calculad 2
 
 ref: https://github.com/cardwizard/EllipticCurves
 
-# 4. (3 puntos) Alice y Bob usarán la versión sobre curvas elípticas del intercambio de claves
-Diffie-Hellman utilizando el primo p = 2671, la curva E : y
-2 = x
-3 + 171x + 853 y el punto
-P = (1980, 431) ∈ E(F2671).
+# 4. (3 puntos) Alice y Bob usarán la versión sobre curvas elípticas del intercambio de claves Diffie-Hellman utilizando el primo p = 2671, 
+# la curva E : y 2 = x3 + 171x + 853 y el punto P = (1980, 431) ∈ E(F2671).
 (i) Si Alice env´ıa el punto QA = (2110, 543) y Bob usa la clave privada nB = 1943,
 ¿qe punto debe enviar Bob a Alice?
 
@@ -138,6 +135,6 @@ ahora Alice solo envıa la coordenada xA = 2 de su punto QA. Bob ha cambiado su 
 secreta nB = 875. ¿Qu´e valor, modulo p, debe enviar Bob a Alice? ¿Cu´al es el valor
 secreto com´un?
 
-# 5. (1 punto) Sean E una curva el´ıptica sobre un cuerpo K y {P1, P2} una base de E[n].
+# 5. (1 punto) Sean E una curva elıptica sobre un cuerpo K y {P1, P2} una base de E[n].
 Demostrad que el pairing de Weil, en(P1, P2), es una ra´ız n-´esima de la unidad. Observaci´on:
 tened en cuenta que el pairing de Weil es no degenerado para acabar la demostraci´on.

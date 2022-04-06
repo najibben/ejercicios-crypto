@@ -1,7 +1,7 @@
 # ejercicios-crypto
 
 Enunciados
-# 1. (2 puntos) Alice y Bob quieren utilizar el intercambio de claves Diffie-Hellman para encontrar un secreto común del que derivar´an la clave secreta para un algoritmo simétrico.
+# 1. (2 puntos) Alice y Bob quieren utilizar el intercambio de claves Diffie-Hellman para encontrar un secreto común del que derivar´an la clave secreta para un algoritmo simétrico.
 Acuerdan utilizar el número primo p = 941 y la raíz g = 627 como valores públicos. Si Alice
 toma como clave privada a = 347 y Bob toma como clave privada b = 781, ¿cuál es el valor
 secreto común?

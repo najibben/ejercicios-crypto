@@ -130,10 +130,46 @@ ref: https://github.com/cardwizard/EllipticCurves
 
 ![image](https://user-images.githubusercontent.com/28484657/161999492-43000bf6-a688-48e8-9ed2-379cbfb5bfe1.png)
 
-(iii) Alice y Bob deciden volver a ejecutar el algoritmo con los mismos valores p´ublicos, pero
+(iii) Alice y Bob deciden volver a ejecutar el algoritmo con los mismos valores publicos, pero
 ahora Alice solo envıa la coordenada xA = 2 de su punto QA. Bob ha cambiado su clave
-secreta nB = 875. ¿Qu´e valor, modulo p, debe enviar Bob a Alice? ¿Cu´al es el valor
-secreto com´un?
+secreta nB = 875. ¿Que valor, modulo p, debe enviar Bob a Alice? ¿Cual es el valor
+secreto comun?
+```
+import itertools
+
+# y^2 = x^3 + 171x + 2 (mod 2671)
+p=2671
+a=171
+b=853
+
+xlable = dict()
+ylable = dict()
+
+# for all the number x, get the module (x^3 + ax + b) % p
+def lablex(x):
+   xlable.setdefault((x**3+a*x+b)%p, []).append(x)
+
+# for all the number y, get the module (y^2) % p
+def labley(y):
+   ylable.setdefault((y**2)%p, []).append(y)
+
+# calculate all the number
+for num in range(0,p):
+   lablex(num)
+   labley(num)
+
+# get all the points an length
+intersect = []
+for item in xlable.keys():
+   if ylable.has_key(item):
+       tmp = list(itertools.product(xlable[item], ylable[item]))
+       intersect = intersect + tmp;
+print "points:", sorted(intersect)
+print "length:", len(intersect)
+```
+
+Calculamos el punto `(2,96)`
+![image](https://user-images.githubusercontent.com/28484657/162077194-49a77368-b1e8-4851-a3dd-e26df7c1dc79.png)
 
 # 5. (1 punto) Sean E una curva elıptica sobre un cuerpo K y {P1, P2} una base de E[n].
 Demostrad que el pairing de Weil, en(P1, P2), es una ra´ız n-´esima de la unidad. Observaci´on:

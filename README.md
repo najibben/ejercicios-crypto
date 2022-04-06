@@ -112,14 +112,29 @@ Diffie-Hellman utilizando el primo p = 2671, la curva E : y
 3 + 171x + 853 y el punto
 P = (1980, 431) ∈ E(F2671).
 (i) Si Alice env´ıa el punto QA = (2110, 543) y Bob usa la clave privada nB = 1943,
-¿qu´e punto debe enviar Bob a Alice?
+¿qe punto debe enviar Bob a Alice?
 
-(ii) ¿Cu´al es el valor secreto com´un?
+`Point  = (1432, 667)`
+
+```
+    bob_private_key = 1943
+
+    ecc = EllipticCurve(171, 853, 2671)
+    Generator = Point(ecc, 1980, 431, "Generator")
+ 
+    bob_pub = bob_private_key * Generator
+    bob_pub.name = "Bob Public Key"
+
+    shared_secret_bob = alice_pub * bob_private_key
+    shared_secret_bob.name = "Shared Secret"
+    ecc.plot_points([Generator, alice_pub, bob_pub, shared_secret_bob])
+```
+(ii) ¿Cuál es el valor secreto común?
 
 ![image](https://user-images.githubusercontent.com/28484657/161999492-43000bf6-a688-48e8-9ed2-379cbfb5bfe1.png)
 
 (iii) Alice y Bob deciden volver a ejecutar el algoritmo con los mismos valores p´ublicos, pero
-ahora Alice s´olo env´ıa la coordenada xA = 2 de su punto QA. Bob ha cambiado su clave
+ahora Alice solo envıa la coordenada xA = 2 de su punto QA. Bob ha cambiado su clave
 secreta nB = 875. ¿Qu´e valor, modulo p, debe enviar Bob a Alice? ¿Cu´al es el valor
 secreto com´un?
 

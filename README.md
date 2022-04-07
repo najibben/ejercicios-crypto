@@ -169,6 +169,8 @@ print "length:", len(intersect)
 ```
 
 Calculamos el punto `(2,96),(2,2575)`
+ref : https://en.wikipedia.org/wiki/Counting_points_on_elliptic_curves
+ref :      
 ![image](https://user-images.githubusercontent.com/28484657/162077194-49a77368-b1e8-4851-a3dd-e26df7c1dc79.png)
 
 # 5. (1 punto) Sean E una curva elıptica sobre un cuerpo K y {P1, P2} una base de E[n].
